@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINGO</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section id="title">
+      <h1>BINGO</h1>
+      <input type="text" id="nombre1" placeholder="Nombre 1" required /><br />
+      <input type="text" id="nombre2" placeholder="Nombre 2" required /><br />
+      <input type="text" id="nombre3" placeholder="Nombre 3" required /><br />
+      <input type="text" id="nombre4" placeholder="Nombre 4" required /><br />
+
+      <label for="n">Seleccione el tamaño del cartón:</label>
+      <select id="n">
+        <option value="3">3x3</option>
+        <option value="4">4x4</option>
+        <option value="5">5x5</option>
+      </select>
+      <br />
+      <button id="inicio-juego">Iniciar Juego</button>
+    </section>
+
+    <section id="cartones">
+      <div id="botones" style="display: none">
+        <button id="btnAnterior">Cartón Anterior</button>
+        <button id="btnSiguiente">Siguiente Cartón</button>
+      </div>
+
+      <section id="gridSection" style="display: none">
+        <div id="gridContainer" class="grid"></div>
+      </section>
+
+      <div id="resultado"></div>
+      <div id="contadorTurnos"></div>
+      <div id="puntos" style="display: none">
+        <div id="puntosJugador"></div>
+      </div>
+    </section>
+
+    <button id="btnSacarNumero" style="display: none">Sacar Número</button>
+    <button id="btnRegresar" style="display: none">Regresar al Menú</button>
+  </body>
+</html>
